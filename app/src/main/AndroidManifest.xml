@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.m.recipebook">
+
+    <uses-feature android:name="android.hardware.Camera2" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/my_cuisine_trial"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/my_cuisine_trial_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DisplayMediaFullScreen"></activity>
+        <activity android:name=".FullScreenVideo" />
+        <activity android:name=".UpdatePasswordActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".AddPopUp"
+            android:excludeFromRecents="true"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert" />
+        <activity
+            android:name=".AddDirections"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AccountActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddRecipeActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CategoriesActivity" />
+        <activity android:name=".CommentsActivity" />
+        <activity
+            android:name=".CreateAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DisplayFullRecipeActivity" />
+        <activity android:name=".FindRecipeActivity" />
+        <activity
+            android:name=".FirstTimeUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FriendsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NotificationsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".OthersProfileActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EditPostActivity"
+            android:parentActivityName=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity
+            android:name=".AddFriendsActivity"
+            android:parentActivityName=".MainActivity" /> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.com.example.m.whatsdat"
+            android:value="ca-app-pub-7804935375250191~1213923877" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1683911521708538"
+            android:exported="true" />
+    </application>
+
+</manifest>

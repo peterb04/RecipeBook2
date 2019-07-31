@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#bdbdbd</color>
+    <color name="colorPrimaryDark">#ab0707</color>
+    <color name="colorAccent">#38A99A</color>
+    <color name="colorBackgroundSection">#eeeeee</color>
+    <color name="colorBackgroundDescription">#818181</color>
+    <color name="uncheckedListItem">#f2f2f2</color>
+    <color name="checkedListItem">#b0b2b3</color>
+    <color name="pressedistItem">#565656</color>
+    <color name="colorToolbar">#D50000</color>
+    <color name="colorIcon">#fff</color>
+    <color name="colorNavigationView">#fff</color>
+</resources>

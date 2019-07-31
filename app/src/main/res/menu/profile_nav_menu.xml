@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_Profile"
+            android:title="Profile"
+            android:icon="@drawable/icon_profile"
+            />
+        <item
+            android:id="@+id/nav_addRecipe"
+            android:title="Add Recipe"
+            android:icon="@drawable/icon_add_recipe"
+           />
+        <item
+            android:id="@+id/nav_myFriends"
+            android:title="Followers"
+            android:icon="@drawable/icon_friends"
+           />
+        <item
+            android:id="@+id/nav_findRecipe"
+            android:title="Find Recipe"
+            android:icon="@drawable/icon_search"
+            />
+        <item
+            android:id="@+id/nav_categories"
+            android:title="Categories"
+            android:icon="@drawable/icon_categories"
+           />
+        <item
+            android:id="@+id/nav_friends"
+            android:title="Find Profile to Follow"
+            android:icon="@drawable/icon_findfriend"
+            />
+        <item
+            android:id="@+id/nav_unfinishedrecipes"
+            android:title="Unfinished Recipes"
+            android:icon="@drawable/icon_unfinished_recipes"
+           />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_account"
+            android:title="Account"
+            android:icon="@drawable/icon_account"
+            />
+        <item
+            android:id="@+id/nav_signOut"
+            android:title="Sign Out"
+            android:icon="@drawable/icon_signout"
+            />
+    </group>
+</menu>
